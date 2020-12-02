@@ -1,0 +1,22 @@
+---
+title: "Teste da funcionalidade de DrillDown usando os meses do ano"
+author: "Afonso Machado"
+date: "02/12/2020"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Produção:
+
+```{r tabsets2, echo=FALSE}
+shinyAppFile("TesteDrillDown.R",
+             options = list(
+               width = "100%", 
+               height = 600
+             ))
+```
+
